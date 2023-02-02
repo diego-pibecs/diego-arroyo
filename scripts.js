@@ -44,7 +44,7 @@ function transitionMenuIcon() {
         case 1: {
             menuIcon.style.transform = "translate(-45px, 0px)";
             menuIcon.style.transitionDuration = "0.4s";
-        }
+        }   break;
     }
 }
 
@@ -77,7 +77,8 @@ function displayImgContent() {
     }
 }
 
-/*
+/*  No le hagan mucho caso a esto, estaba probando cosas.
+
 window.transitionToPage = function(href) {
     document.querySelector('body').style.opacity = 0
     setTimeout(function() { 

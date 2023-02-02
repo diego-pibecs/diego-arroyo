@@ -11,53 +11,27 @@
     src: url("fuentes/CircularSpotifyText-Black.otf") format("opentype");   /* Selecciona dónde está guardada esa fuente y de qué tipo es. */
 }
 
-/*
-::-webkit-scrollbar {
-    display: none;
-} */
-
-/* Estas propiedades modifican la barra lateral (scroll bar)
-::-webkit-scrollbar-track {
-    border-radius: 0;
-    background-color: var(--lime);
-}
-  
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: #383838;
-} */
-
-.slideUp {
-    animation-name: slideUp;
-    animation-name: slideUp;
-    animation-duration: 1s;
-    animation-duration: 1s;
-    visibility: visible;
-  }
-  
-  @keyframes slideUp {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
-body {
-    background-color: var(--gray);
+/* Estas propiedades modifican la barra lateral (scroll bar) */
+::-webkit-scrollbar {
+    width: 3px;
 }
 
-.prueba {
-    width: 100px;
-    height: 100px;
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #7f7d66;
+}
+
+body {
+    background-color: var(--gray);
 }
 
 #main-wrapper {
@@ -68,7 +42,7 @@ body {
     background-size: cover;
     background-position: center;
     padding-bottom: 50px;
-    height: 900px;                    /* cambiar */
+    height: 900px;                    /* cambiar con Media Queries*/
 }
 
 .main-nav {
@@ -135,7 +109,7 @@ body {
     cursor: default;
 }
 
-/* Se agrega un fondo al nombre Diego Arroyo y se hace de 3px, desde al izquierda y en la parte inferior.
+/* Se agrega un fondo al nombre Diego Arroyo y se hace de 3px, desde la izquierda y en la parte inferior.
 Con transiciones se logra el efecto de subrayado. */
 #main-title-sign {
     font-family: CircularSpotify;
@@ -191,14 +165,6 @@ Con transiciones se logra el efecto de subrayado. */
     gap: 50px;
 }
 
-.box {
-    --mask:
-      radial-gradient(8.94vh at 50% 12.00vh,#000 99%,#0000 101%) calc(50% - 8vh) 0/16vh 100%,
-      radial-gradient(8.94vh at 50% -8vh,#0000 99%,#000 101%) 50% 4vh/16vh 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
-}
-
 .img-content-title {
     display: block;
     font-size: 30pt;
@@ -228,10 +194,6 @@ Con transiciones se logra el efecto de subrayado. */
 .img-hidden-collapse:hover {
     fill-opacity: 0.5;
 }
-
-/* .main-wrapper-section-hoverable:hover .div-img-hidden-clickable {
-    display: block;
-} */
 
 .main-wrapper-section-hoverable:hover .div-img-hidden {
     display: block;
