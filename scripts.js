@@ -1,14 +1,9 @@
 
+// Menú desplegable
 let controller = 0;
-
 let menuIcon = document.getElementById('nav-menuicon');
 menuIcon.addEventListener('click', displayMenu);
 menuIcon.addEventListener('click', transitionMenuIcon);
-
-/* Estudien muy bien estas funciones, para que se comprenda el movimiento del ícono y del menú. */
-
-/* Si controller vale 0, entonces el menú se moverá a su posición original.
-Si el controlador vale 1, el menú se moverá hacia abajo. */
 
 function displayMenu() {
     switch (controller) {
@@ -32,9 +27,6 @@ function displayMenu() {
     }
 }
 
-/* Si controller vale 0, entonces el ícono del menú se moverá a su posición original.
-Si el controlador vale 1, el ícono del menú se moverá hacia abajo. */
-
 function transitionMenuIcon() {
     switch (controller) {
         case 0: {
@@ -47,52 +39,60 @@ function transitionMenuIcon() {
         }   break;
     }
 }
+//
 
-let imgClickable = document.getElementsByClassName("img-clickable")
+
+// Imágenes y sus descripciones
+let imgClickable = document.getElementsByClassName("img-clickable");
+let displayImgContentControllers = new Array(imgClickable.length).fill(0);
+
 for (let index = 0; index < imgClickable.length; index++) {
-    imgClickable[index].addEventListener('click', displayImgContent);
-}
-
-
-let displayImgContentController = 0;
-
-let displayImgContentCollapser = document.getElementsByClassName("img-hidden-collapse")
-for (let index = 0; index < displayImgContentCollapser.length; index++) {
-    displayImgContentCollapser[index].addEventListener('click', displayImgContent);
-}
-
-function displayImgContent() {
-    const imgContent = document.getElementsByClassName('div-img-hidden-clickable');
-    for (let index = 0; index < imgContent.length; index++) {
-        const element = imgContent[index];
-        if (displayImgContentController == 0){
-            element.style.display = "flex";
+    imgClickable[index].addEventListener('click', function() {
+        const imgContent = this.nextElementSibling.nextElementSibling;
+        let displayImgContentController = 0;
+        if (displayImgContentController === 0){
+            imgContent.style.display = "flex";
             displayImgContentController = 1;
             document.body.style.overflow = "hidden";
         } else {
-            element.style.display = "none";
+            imgContent.style.display = "none";
             displayImgContentController = 0;
             document.body.style.overflow = "visible";
         }
+    });
+}
+
+let imgCloseButton = document.getElementsByClassName("img-hidden-collapse");
+for (let index = 0; index < imgCloseButton.length; index++) {
+    imgCloseButton[index].addEventListener('click', hideImgContent);
+}
+
+function hideImgContent() {
+    const imgContent = document.getElementsByClassName('div-img-hidden-clickable');
+    for (let index = 0; index < imgContent.length; index++) {
+        const element = imgContent[index];
+        element.style.display = "none";
     }
+    document.body.style.overflow = "visible";
 }
 
-/*  No le hagan mucho caso a esto, estaba probando cosas.
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        hideImgContent();
+    }
+});
+//
 
-window.transitionToPage = function(href) {
-    document.querySelector('body').style.opacity = 0
-    setTimeout(function() { 
-        window.location.href = href
-    }, 500)
+
+// Álbumes aleatoriamente cada que se actualiza la página
+const sectionWrapper = document.getElementById("section-wrapper");
+const childrenArray = Array.from(sectionWrapper.childNodes);
+
+childrenArray.sort(function() {
+  return 0.5 - Math.random();
+});
+
+for (let i = 0; i < childrenArray.length; i++) {
+  sectionWrapper.appendChild(childrenArray[i]);
 }
-
-document.addEventListener('DOMContentLoaded', function(event) { document.querySelector('body').style.opacity = 1 });
-*/
-
-// window.onscroll = function() {myFunction()};
-
-// function myFunction() {
-//   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//     document.getElementById("section-wrapper").className = "slideUp";
-//   }
-// }
+//
