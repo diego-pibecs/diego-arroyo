@@ -1,3 +1,13 @@
+// // Selecciona la imagen
+// const image = document.getElementById('prueba');
+
+// // Crea una instancia de ColorThief y extrae el color predominante
+// const colorThief = new ColorThief();
+// const dominantColor = colorThief.getColor(image);
+
+// // Aplica el color predominante a un elemento HTML utilizando CSS
+// const element = document.querySelector('#main-article');
+// element.style.backgroundColor = `rgb(${dominantColor.join(',')})`;
 
 // Menú desplegable
 let controller = 0;
@@ -79,6 +89,8 @@ function hideImgContent() {
 document.addEventListener('keydown', function(event) {
     if (event.key === "Escape") {
         hideImgContent();
+    } else if (event.key === "Backspace") {
+        hideImgContent();
     }
 });
 //
@@ -96,3 +108,11 @@ for (let i = 0; i < childrenArray.length; i++) {
   sectionWrapper.appendChild(childrenArray[i]);
 }
 //
+
+const albumTitlesHidden = document.getElementsByClassName("div-img-hidden");
+for (let i = 0; i < albumTitlesHidden.length; i++) {
+    const element = albumTitlesHidden[i];
+    if (element.innerHTML.length > 29) {
+        element.style.textOverflow = 'ellipsis';
+    }
+}
