@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/colorthief@2.3.2/dist/color-thief.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
 </head>
 <body>
     <header id="main-wrapper">
@@ -34,7 +34,7 @@
                 </p>
             </section>
             <section id="main-wrapper-section">
-                <div class="main-wrapper-section-hoverable">
+                <div class="main-wrapper-section-hoverable"> <!-- the Glow, pt. 2 -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/The Glow, pt. 2.jpg" alt="The Glow, pt. 2 album cover">
                     <div class="div-img-hidden">The Glow, pt. 2</div>
                     <div class="div-img-hidden-clickable">
@@ -72,14 +72,14 @@
                                     optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
                                     Cupiditate enim excepturi itaque.
                                 </p>
-                                <div class="album-img-container">
+                                <div class="album-rated">
                                     <h1>10/10</h1>
                                 </div>
                             </div>                            
                         </div>
                     </div>
                 </div>
-                <div class="main-wrapper-section-hoverable">
+                <div class="main-wrapper-section-hoverable"> <!-- Soundtracks for the Blind -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Soundtracks for the Blind.jpg" alt="Soundtracks for the Blind album cover">
                     <div class="div-img-hidden">Soundtracks for the Blind</div>
                     <div class="div-img-hidden-clickable">
@@ -87,30 +87,44 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Soundtracks for the Blind.jpg" alt="Soundtracks for the Blind album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Soundtracks for the Blind &nbsp;&nbsp;|&nbsp;&nbsp; Swans</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Soundtracks for the Blind</a></h1>
+                            <h2 class="album-artist">Swans</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>10/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
-                <div class="main-wrapper-section-hoverable">
+                <div class="main-wrapper-section-hoverable"> <!-- OK Computer -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/OK Computer.jpg" alt="OK Computer album cover">
                     <div class="div-img-hidden">OK Computer</div>
                     <div class="div-img-hidden-clickable">
@@ -118,27 +132,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/OK Computer.jpg" alt="OK Computer album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">OK Computer &nbsp;&nbsp;|&nbsp;&nbsp; Radiohead</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">OK Computer</a></h1>
+                            <h2 class="album-artist">Radiohead</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>10/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
             </section>
@@ -147,7 +175,7 @@
     <article id="main-article" class="wavy">
         <div id="colored-article">
             <section id="section-wrapper">
-                <div class="main-wrapper-section-hoverable">
+                <div class="main-wrapper-section-hoverable"> <!-- Mount Eerie -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Mount Eerie.jpg" alt="Mount Eerie album cover">
                     <div class="div-img-hidden">Mount Eerie</div>
                     <div class="div-img-hidden-clickable">
@@ -155,30 +183,44 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Mount Eerie.jpg" alt="Mount Eerie album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Mount Eerie &nbsp;&nbsp;|&nbsp;&nbsp; the Microphones</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Mount Eerie</a></h1>
+                            <h2 class="album-artist">the Microphones</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>10/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
-                <div class="main-wrapper-section-hoverable">
+                <div class="main-wrapper-section-hoverable"> <!-- Dawn -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Dawn.jpg" alt="Dawn album cover">
                     <div class="div-img-hidden">Dawn</div>
                     <div class="div-img-hidden-clickable">
@@ -186,30 +228,44 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Dawn.jpg" alt="Dawn album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Dawn &nbsp;&nbsp;|&nbsp;&nbsp; Mount Eerie</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Dawn</a></h1>
+                            <h2 class="album-artist">Mount Eerie</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>10/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
-                <div class="main-wrapper-section-hoverable">
+                <div class="main-wrapper-section-hoverable"> <!-- Person Pitch -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Person Pitch.jpg" alt="Person Pitch album cover">
                     <div class="div-img-hidden">Person Pitch</div>
                     <div class="div-img-hidden-clickable">
@@ -217,30 +273,44 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Person Pitch.jpg" alt="Person Pitch album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Person Pitch &nbsp;&nbsp;|&nbsp;&nbsp; Panda Bear</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Person Pitch</a></h1>
+                            <h2 class="album-artist">Panda Bear</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
-                <div class="main-wrapper-section-hoverable">
+                <div class="main-wrapper-section-hoverable"> <!-- Lift Your Skinny Fists Like Antennas To Heaven -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Lift Your Skinny Fists Likes Antennas To Heaven.jpg" alt="Lift Your Skinny Fists Likes Antennas To Heaven album cover">
                     <div class="div-img-hidden">Lift Your Skinny Fists Like Antennas To Heaven</div>
                     <div class="div-img-hidden-clickable">
@@ -248,30 +318,44 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Lift Your Skinny Fists Likes Antennas To Heaven.jpg" alt="Lift Your Skinny Fists Likes Antennas To Heaven album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Lift Your Skinny Fists Like Antennas To Heaven &nbsp;&nbsp;|&nbsp;&nbsp; Godspeed You! Black Emperor</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title" style="font-size: 32pt;"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Lift Your Skinny Fists Like Antennas To Heaven</a></h1>
+                            <h2 class="album-artist">Godspeed You! Black Emperor</h2>
+                            <div class="album-description" style="max-height: calc(100% - 2rem - 1.5em - 32pt);">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
-                <div class="main-wrapper-section-hoverable">
+                <div class="main-wrapper-section-hoverable"> 
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/De Todas las Flores.jpeg" alt="De Todas las Flores album cover">
                     <div class="div-img-hidden">De Todas las Flores</div>
                     <div class="div-img-hidden-clickable">
@@ -279,27 +363,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/De Todas las Flores.jpeg" alt="De Todas las Flores album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">De Todas las Flores &nbsp;&nbsp;|&nbsp;&nbsp; Natalia Lafourcade</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">De Todas las Flores</a></h1>
+                            <h2 class="album-artist">Natalia Lafourcade</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -310,27 +408,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Yankee Hotel Foxtrot.jpg" alt="Yankee Hotel Foxtrot album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Yankee Hotel Foxtrot &nbsp;&nbsp;|&nbsp;&nbsp; Wilco</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Yankee Hotel Foxtrot</a></h1>
+                            <h2 class="album-artist">Wilco</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -341,27 +453,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Abbey Road.jpg" alt="Abbey Road album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Abbey Road &nbsp;&nbsp;|&nbsp;&nbsp; the Beatles</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Abbey Road</a></h1>
+                            <h2 class="album-artist">the Beatles</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -372,27 +498,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Velocity​:​Design​:​Comfort..jpg" alt="Velocity: Design: Comfort. album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Velocity: Design: Comfort. &nbsp;&nbsp;|&nbsp;&nbsp; sweet trip</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Velocity: Design: Comfort.</a></h1>
+                            <h2 class="album-artist">sweet trip</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -403,27 +543,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/In Rainbows.jpg" alt="In Rainbows album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">In Rainbows &nbsp;&nbsp;|&nbsp;&nbsp; Radiohead</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">In Rainbows</a></h1>
+                            <h2 class="album-artist">Radiohead</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -434,27 +588,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Leaves Turn Inside You.jpg" alt="Leaves Turn Inside You album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Leaves Turn Inside You &nbsp;&nbsp;|&nbsp;&nbsp; Unwound</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Leaves Turn Inside You</a></h1>
+                            <h2 class="album-artist">Unwound</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -465,27 +633,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Revolver.jpg" alt="Revolver album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Revolver &nbsp;&nbsp;|&nbsp;&nbsp; the Beatles</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Revolver</a></h1>
+                            <h2 class="album-artist">the Beatles</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -496,27 +678,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Mr. Morale & The Big Steppers.webp" alt="Mr. Morale & The Big Steppers album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Mr. Morale & The Big Steppers &nbsp;&nbsp;|&nbsp;&nbsp; Kendrick Lamar</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Mr. Morale & The Big Steppers</a></h1>
+                            <h2 class="album-artist">Kendrick Lamar</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -527,27 +723,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Fetch The Bolt Cutters.webp" alt="Fetch The Bolt Cutters album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Fetch The Bolt Cutters &nbsp;&nbsp;|&nbsp;&nbsp; Fiona Apple</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Velocity: Design: Comfort.</a></h1>
+                            <h2 class="album-artist">sweet trip</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -558,27 +768,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Illinois.jpg" alt="Illinois album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Illinois &nbsp;&nbsp;|&nbsp;&nbsp; Sufjan Stevens</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Illinois</a></h1>
+                            <h2 class="album-artist">Sufjan Stevens</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -589,27 +813,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Funeral.webp" alt="Funeral album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Funeral &nbsp;&nbsp;|&nbsp;&nbsp; Arcade Fire</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Funeral</a></h1>
+                            <h2 class="album-artist">Arcade Fire</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -620,27 +858,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Clear Moon.jpg" alt="Clear Moon album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Clear Moon &nbsp;&nbsp;|&nbsp;&nbsp; Mount Eerie</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Clear Moon</a></h1>
+                            <h2 class="album-artist">Mount Eerie</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -651,27 +903,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/In the Aeroplane Over the Sea.jpg" alt="In The Aeroplane Over The Sea album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">In The Aeroplane Over The Sea &nbsp;&nbsp;|&nbsp;&nbsp; Neutral Milk Hotel</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">In The Aeroplane Over The Sea</a></h1>
+                            <h2 class="album-artist">Neutral Milk Hotel</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -682,27 +948,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/The Dark Side of the Moon.svg" alt="The Dark Side of the Moon album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">The Dark Side of the Moon &nbsp;&nbsp;|&nbsp;&nbsp; Pink Floyd</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">The Dark Side of the Moon</a></h1>
+                            <h2 class="album-artist">Pink Floyd</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -713,27 +993,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/The Beatles.jpg" alt="The Beatles album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">The Beatles &nbsp;&nbsp;|&nbsp;&nbsp; the Beatles</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">The Beatles</a></h1>
+                            <h2 class="album-artist">the Beatles</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -744,27 +1038,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Fsharp Asharp infty.jpg" alt="F# A# ∞ album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">F# A# ∞ &nbsp;&nbsp;|&nbsp;&nbsp; Godspeed You! Black Emperor</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">F# A# ∞</a></h1>
+                            <h2 class="album-artist">Godspeed You! Black Emperor</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -775,27 +1083,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Ladies and gentlemen we are floating in space.jpg" alt="Ladies and gentlemen we are floating in space album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Ladies and gentlemen we are floating in space &nbsp;&nbsp;|&nbsp;&nbsp; Spiritualized</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title" style="font-size: 32pt;"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Ladies and gentlemen we are floating in space</a></h1>
+                            <h2 class="album-artist">Spiritualized</h2>
+                            <div class="album-description" style="max-height: calc(100% - 2rem - 1.5em - 32pt);">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -806,27 +1128,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Kid A.jpg" alt="Kid A album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Kid A &nbsp;&nbsp;|&nbsp;&nbsp; Radiohead</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Kid A</a></h1>
+                            <h2 class="album-artist">Radiohead</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -837,27 +1173,41 @@
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Películas.jpeg" alt="Películas album cover">
-                        <p class="img-content-p">
-                            <strong class="img-content-title">Películas &nbsp;&nbsp;|&nbsp;&nbsp; La Maquina De Hacer Pájaros</strong>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
-                            assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
-                            debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
-                            Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
-                            reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
-                            porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
-                            molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
-                            rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
-                            ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
-                            minus temporibus commodi illum ullam facere quis facilis. <br> <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
-                            tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
-                            animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
-                            nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
-                            optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
-                            Cupiditate enim excepturi itaque.
-                        </p>
+                        <div class="album-contents">
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Películas</a></h1>
+                            <h2 class="album-artist">La Maquina De Hacer Pájaros</h2>
+                            <div class="album-description">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
+                                    assumenda consequuntur necessitatibus iure? Excepturi unde non debitis ipsam veniam! Deserunt delectus, 
+                                    debitis libero temporibus rerum incidunt excepturi, alias non nemo aperiam autem voluptatum eligendi. 
+                                    Numquam quam commodi aut quidem eveniet recusandae laborum pariatur sunt consectetur explicabo! <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae labore possimus? Architecto 
+                                    reiciendis, aliquid rerum adipisci delectus sed ipsam deleniti sint rem velit dolore vero, qui molestiae 
+                                    porro soluta! Nulla sint praesentium repellat eum? Ab tenetur reiciendis, cumque voluptas velit enim earum
+                                    molestiae doloribus reprehenderit nobis ducimus cum magnam? <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet delectus ex! Culpa laborum pariatur 
+                                    rem dolores, porro et quidem magni tempora vitae consectetur, illum iste deleniti eligendi sequi, aut 
+                                    ipsa nobis numquam perferendis doloremque necessitatibus in. Placeat culpa voluptate voluptatem possimus, 
+                                    minus temporibus commodi illum ullam facere quis facilis. <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque. <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis fuga, tenetur minus error 
+                                    tempore reiciendis, quos ipsam consectetur amet debitis ea molestias suscipit a pariatur illo temporibus 
+                                    animi explicabo culpa. Quibusdam optio deserunt expedita. Possimus architecto tempore doloribus officiis 
+                                    nulla laborum repellat cum hic atque non magni, repellendus enim voluptas sapiente consectetur doloremque 
+                                    optio dolore quidem ex! Nesciunt, reiciendis doloremque. Modi repellendus sapiente libero saepe. 
+                                    Cupiditate enim excepturi itaque.
+                                </p>
+                                <div class="album-rated">
+                                    <h1>9.5/10</h1>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable">
@@ -1518,7 +1868,7 @@
                         <svg class="img-hidden-collapse" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
-                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Hi, How Are You.webp" alt="Hi, How Are You album cover">
+                        <img id="prueba" class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Hi, How Are You.webp" alt="Hi, How Are You album cover">
                         <p class="img-content-p">
                             <strong class="img-content-title">Hi, How Are You &nbsp;&nbsp;|&nbsp;&nbsp; Daniel Johnston</strong>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae nihil animi error 
@@ -1546,5 +1896,19 @@
         </div>
     </article>
     <script src="scripts.js"></script>
+    <!-- <script>
+        // Obtener la imagen y la instancia de Color Thief
+        const miImagen = document.getElementById('prueba');
+        const colorThief = new ColorThief();
+        
+        // Esperar a que la imagen se cargue completamente
+        miImagen.addEventListener('load', function() {
+            // Obtener el color dominante de la imagen
+            const colorDominante = colorThief.getColor(miImagen);
+            
+            // Utilizar el color dominante para algo
+            console.log('El color dominante de la imagen es:', colorDominante);
+        });
+    </script> -->
 </body>
 </html>

@@ -169,7 +169,14 @@ Con transiciones se logra el efecto de subrayado. */
     width: 100vw;
     top: 0px;
     left: 0px;
-    background-color: #333333;
+    background-image: linear-gradient(
+        to bottom,
+        #333333,
+        #262626,
+        #1d1d1d,
+        #1a1a1a
+    );
+    background-size: 200%;
     font-family: 'Crimson Pro', serif;
     font-weight: 600;
     color: var(--lime);
@@ -197,12 +204,7 @@ Con transiciones se logra el efecto de subrayado. */
     font-weight: 500;
 }
 
-.album-img-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.album-img-container h1 {
+.album-rated h1 {
     font-size: 24pt;
     text-align: end;
 }
