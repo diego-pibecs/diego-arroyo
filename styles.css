@@ -162,8 +162,8 @@ Con transiciones se logra el efecto de subrayado. */
 
 .div-img-hidden-clickable {
     display: none;
+    align-items: center;
     padding: 100px;
-    padding-top: 150px;
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -182,8 +182,42 @@ Con transiciones se logra el efecto de subrayado. */
     font-size: 30pt;
 }
 
-.img-content-p {
+.album-contents {
+    display: block;
+    height: 650px;
+}
+
+.album-description {
+    max-height: calc(100% - 2rem - 1.5em - 42pt);
+    margin-top: 2rem;
     font-size: 16pt;
+    overflow-y: scroll;
+    padding-right: 2rem;
+    font-family: 'Crimson Text';
+    font-weight: 500;
+}
+
+.album-img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.album-img-container h1 {
+    font-size: 24pt;
+    text-align: end;
+}
+
+.album-title {
+    font-size: 42pt;
+}
+
+.album-title a {
+    color: var(--lime);
+    text-decoration: none;
+}
+
+.album-title a:hover {
+    opacity: 0.5;
 }
 
 .img-expandible {
@@ -199,6 +233,7 @@ Con transiciones se logra el efecto de subrayado. */
 .img-hidden-collapse {
     fill: var(--lime);
     position: absolute;
+    top: 180px;
     right: 124px;
     cursor: pointer;
 }
