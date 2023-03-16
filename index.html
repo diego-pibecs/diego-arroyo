@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Arroyo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -13,14 +14,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <script defer src="scripts-about.js"></script>
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header id="main-wrapper">
         <nav class="main-nav">
             <svg id="nav-menuicon" xmlns="http://www.w3.org/2000/svg" fill="#333333" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
             <ul id="nav-menu">
-                <li class="nav-menu-item"><a id="about-me-btn" class="nav-menu-link" href="about.html">sobre mí</a></li>
+                <li class="nav-menu-item"><a id="about-me-btn" class="nav-menu-link">sobre mí</a></li>
                 <li class="nav-menu-item"><a id="contact-btn" class="nav-menu-link" href="contact.html">contacto</a></li>
             </ul>
         </nav>
@@ -34,7 +36,7 @@
                 </p>
             </section>
             <section id="main-wrapper-section">
-                <div class="main-wrapper-section-hoverable"> <!-- the Glow, pt. 2 -->
+                <div class="main-wrapper-section-hoverable" id="theGlowPt2"> <!-- the Glow, pt. 2 -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/The Glow, pt. 2.jpg" alt="The Glow, pt. 2 album cover">
                     <div class="div-img-hidden">The Glow, pt. 2</div>
                     <div class="div-img-hidden-clickable">
@@ -79,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-wrapper-section-hoverable"> <!-- Soundtracks for the Blind -->
+                <div class="main-wrapper-section-hoverable" id="soundtracksForTheBlind"> <!-- Soundtracks for the Blind -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Soundtracks for the Blind.jpg" alt="Soundtracks for the Blind album cover">
                     <div class="div-img-hidden">Soundtracks for the Blind</div>
                     <div class="div-img-hidden-clickable">
@@ -124,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-wrapper-section-hoverable"> <!-- OK Computer -->
+                <div class="main-wrapper-section-hoverable" id="okComputer"> <!-- OK Computer -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/OK Computer.jpg" alt="OK Computer album cover">
                     <div class="div-img-hidden">OK Computer</div>
                     <div class="div-img-hidden-clickable">
@@ -169,9 +171,15 @@
                         </div>
                     </div>
                 </div>
+                <div id="main-wrapper-section-img-mine">
+                    <img class="main-section-wrapper-img img-clickable" src="imagenes/A Moon Shaped Pool.jpg" alt="Foto de Diego Arroyo">
+                </div>
             </section>
         </section>
     </header>
+    <section id="about-me-section">
+
+    </section>
     <section id="main-article" class="wavy">
         <div id="colored-article">
             <section id="section-wrapper">
@@ -491,13 +499,13 @@
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable"> <!-- Velocity: Design: Comfort. -->
-                    <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Velocity​:​Design​:​Comfort..jpg" alt="Velocity: Design: Comfort. album cover">
+                    <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Velocity.jpg" alt="Velocity: Design: Comfort. album cover">
                     <div class="div-img-hidden">Velocity: Design: Comfort.</div>
                     <div class="div-img-hidden-clickable">
                         <svg class="img-hidden-collapse" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
-                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Velocity​:​Design​:​Comfort..jpg" alt="Velocity: Design: Comfort. album cover">
+                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Velocity.jpg" alt="Velocity: Design: Comfort. album cover">
                         <div class="album-contents">
                             <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Velocity: Design: Comfort.</a></h1>
                             <h2 class="album-artist">sweet trip</h2>
@@ -2203,20 +2211,5 @@
             </section>
         </div>
     </section>
-    <script src="scripts.js"></script>
-    <!-- <script>
-        // Obtener la imagen y la instancia de Color Thief
-        const miImagen = document.getElementById('prueba');
-        const colorThief = new ColorThief();
-        
-        // Esperar a que la imagen se cargue completamente
-        miImagen.addEventListener('load', function() {
-            // Obtener el color dominante de la imagen
-            const colorDominante = colorThief.getColor(miImagen);
-            
-            // Utilizar el color dominante para algo
-            console.log('El color dominante de la imagen es:', colorDominante);
-        });
-    </script> -->
 </body>
 </html>

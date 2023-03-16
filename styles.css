@@ -84,6 +84,10 @@ body {
     background-color: #7f7d66;
 }
 
+#about-me-btn:hover {
+    cursor: pointer;
+}
+
 .nav-menu-link {
     padding: 20px 30px;
     display: block;
@@ -111,6 +115,7 @@ body {
 
 #main-wrapper-section {
     display: flex;
+    justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
 }
