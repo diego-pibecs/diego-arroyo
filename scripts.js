@@ -37,6 +37,25 @@ function displayMenu() {
     }
 }
 
+// let menuItem = document.getElementsByClassName("nav-menu-item");
+// for (let index = 0; index < menuItem.length; index++) {
+//     const link = menuItem[index];
+//     link.addEventListener("click", () => {
+//         controller = 1;
+//         transitionMenuIcon();
+//     })
+// }
+
+document.getElementById("nav-menu").addEventListener("click", () => {
+    controller = 1;
+    displayMenu();
+    let menuIconPath = document.querySelectorAll("#nav-menu path");
+    for (let index = 0; index < menuIconPath.length; index++) {
+        const path = menuIconPath[index];
+        path.setAttribute('d', 'M3 12l18-12v24z');
+    }
+});
+
 function transitionMenuIcon() {
     switch (controller) {
         case 0: {
