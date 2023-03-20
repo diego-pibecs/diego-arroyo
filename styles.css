@@ -94,12 +94,14 @@ body {
     text-decoration: none;
     font-size: 20px;
     color: var(--lime);
+    text-align: center;
 }
 
 #nav-menuicon {
     cursor: pointer;
     width: 47.16px;
     height: 39.3px;
+    fill: #333333;
 }
 
 #nav-menuicon:hover {

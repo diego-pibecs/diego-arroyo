@@ -1,0 +1,109 @@
+@keyframes main-title-sign-contact {
+    100% {
+        font-size: 64pt;
+        color: black;
+        transform: translateY(-10px) translateX(0px);
+        background-image: linear-gradient(90deg, var(--gray), rgb(0, 0, 0));
+    }
+}
+
+@keyframes rotate-menu-icon {
+    0% {
+        transform: rotate(180deg);
+    } 100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes change-title-from-about {
+    0% {
+        color: azure;
+    }
+    100% {
+        color: black;
+    }
+}
+
+@keyframes show-contact {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    } to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.show-contact {
+    animation: show-contact 1.5s ease forwards;
+}
+
+.changing-from-about {
+    animation: change-title-from-about 1s ease forwards;
+}
+
+#legal {
+    font-size: 14pt;
+    margin-top: 20rem;
+}
+
+.text-contact {
+    text-align: center;
+    color: black;
+    font-size: 18pt;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Crimson Text', serif;
+}
+
+.text-contact h4 {
+    font-size: 20pt;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.text-contact span {
+    font-family: 'Cormorant Garamond';
+    font-size: 18pt;
+    margin-bottom: 0.4rem;
+}
+
+.text-contact-container .text-contact {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.text-contact-container {
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 22rem;
+}
+
+.hide-smooth {
+    transform: scale(0) translateY(200%);
+    transition: transform 0.5s ease;
+}
+
+#new-menu-icon {
+    cursor: pointer;
+    width: 47.16px;
+    height: 39.3px;
+    fill: #333333;
+    animation: rotate-menu-icon 0.7s ease forwards;
+}
+
+#new-menu-icon:hover {
+    fill-opacity: 0.5;
+}
+
+.change-title-contact {
+    animation: main-title-sign-contact 1s ease-in-out forwards;
+}
+

@@ -1,14 +1,3 @@
-// // Selecciona la imagen
-// const image = document.getElementById('prueba');
-
-// // Crea una instancia de ColorThief y extrae el color predominante
-// const colorThief = new ColorThief();
-// const dominantColor = colorThief.getColor(image);
-
-// // Aplica el color predominante a un elemento HTML utilizando CSS
-// const element = document.querySelector('#main-article');
-// element.style.backgroundColor = `rgb(${dominantColor.join(',')})`;
-
 // Menú desplegable
 let controller = 0;
 let menuIcon = document.getElementById('nav-menuicon');
@@ -36,15 +25,6 @@ function displayMenu() {
         }
     }
 }
-
-// let menuItem = document.getElementsByClassName("nav-menu-item");
-// for (let index = 0; index < menuItem.length; index++) {
-//     const link = menuItem[index];
-//     link.addEventListener("click", () => {
-//         controller = 1;
-//         transitionMenuIcon();
-//     })
-// }
 
 document.getElementById("nav-menu").addEventListener("click", () => {
     controller = 1;
@@ -136,57 +116,8 @@ for (let i = 0; i < albumTitlesHidden.length; i++) {
     }
 }
 
-// QUITAR DESPUÉS
+//  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! QUITAR DESPUÉS
 const hideRated = document.getElementsByClassName("album-rated");
 for (let i = 0; i < hideRated.length; i++) {
   hideRated[i].style.display = "none";
 }
-
-
-
-
-// // Variables globales para el control de los efectos para mostrar u ocultar las tarjetas de información según el scroll
-// let arrTarjetas = document.querySelectorAll(".animacionAparecer");
-// let tarjetaPrincipal = document.getElementById("cuadroPresentacionManual");
-// //*****************************************************
-
-
-// // Función para mostrar la tarjeta principal de la página al abrir o cargar esta página (cuando el usuario ingresa).
-// function mostrarTarjetaPrincipal(){
-//     tarjetaPrincipal.style.opacity = 1;
-//     tarjetaPrincipal.classList.add("aparecerDesdeAbajo");
-// }
-
-// // Función para mostrar las tarjetas secundarias de la página al detectar que se ha hecho scroll hasta una altura determinada.
-// function mostrarConScroll(){
-    
-//     let distanciaScroll = document.documentElement.scrollTop; //Distancia desde el límite superior hasta la posición a la que se ha bajado en la página.
-
-//     for(var i = 0; i < arrTarjetas.length; i++){
-
-//         let distanciaTarjeta = arrTarjetas[i].offsetTop; //Distancia del límite superior a la tarjeta
-
-//         if(distanciaTarjeta - 500 < distanciaScroll){
-//             arrTarjetas[i].style.opacity = 1;
-//             if(i==1){
-//                 arrTarjetas[i].classList.add("aparecerDesdeDerecha");
-//                 arrTarjetas[i].classList.remove("desaparecerALaDerecha");
-//             }else{
-//                 arrTarjetas[i].classList.add("aparecerDesdeIzquierda");
-//                 arrTarjetas[i].classList.remove("desaparecerALaIzquierda");
-//             }
-//         }else{
-//             arrTarjetas[i].style.opacity = 0;
-//             if(i==1){
-//                 arrTarjetas[i].classList.remove("aparecerDesdeDerecha");
-//                 arrTarjetas[i].classList.add("desaparecerALaDerecha");
-//             }else{
-//                 arrTarjetas[i].classList.remove("aparecerDesdeIzquierda");
-//                 arrTarjetas[i].classList.add("desaparecerALaIzquierda");
-//             }
-//         }
-//     }
-// }
- 
-//  window.addEventListener('load',mostrarTarjetaPrincipal);
-//  window.addEventListener('scroll',mostrarConScroll);

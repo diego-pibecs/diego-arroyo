@@ -7,8 +7,10 @@
     <title>Diego Arroyo</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles-about.css">
+    <link rel="stylesheet" href="styles-contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="iconos/favicon.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -16,16 +18,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script defer src="scripts-about.js"></script>
     <script defer src="scripts.js"></script>
+    <script defer src="scripts-contact.js"></script>
 </head>
 <body>
     <header id="main-wrapper">
         <nav class="main-nav">
-            <svg id="nav-menuicon" xmlns="http://www.w3.org/2000/svg" fill="#333333" viewBox="0 0 24 24">
+            <svg id="nav-menuicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
             </svg>
             <ul id="nav-menu">
                 <li class="nav-menu-item"><a id="about-me-btn" class="nav-menu-link">sobre mí</a></li>
-                <li class="nav-menu-item"><a id="contact-btn" class="nav-menu-link" href="contact.html">contacto</a></li>
+                <li class="nav-menu-item"><a id="contact-btn" class="nav-menu-link">contacto</a></li>
             </ul>
         </nav>
         <section class="main-wrapper-container">
@@ -92,7 +95,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Soundtracks for the Blind.jpg" alt="Soundtracks for the Blind album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Soundtracks for the Blind</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_nClFBfVHhL-nynxsNH1enFJNA7YsGN3e4" target="_blank">Soundtracks for the Blind</a></h1>
                             <h2 class="album-artist">Swans</h2>
                             <div class="album-description">
                                 <p>
@@ -137,7 +140,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/OK Computer.jpg" alt="OK Computer album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">OK Computer</a></h1>
+                            <h1 class="album-title"><a href="https://youtube.com/playlist?list=OLAK5uy_nEGbRK3IZ018QZqnVmZtq-0k-vtJdysnA" target="_blank">OK Computer</a></h1>
                             <h2 class="album-artist">Radiohead</h2>
                             <div class="album-description">
                                 <p>
@@ -174,33 +177,102 @@
                     </div>
                 </div>
                 <div id="main-wrapper-section-img-mine">
-                    <img class="main-section-wrapper-img img-clickable" src="imagenes/Firma.svg" alt="Foto de Diego Arroyo">
+                    <img class="main-section-wrapper-img img-clickable" src="imagenes/Firma.svg" alt="Firma de Diego Arroyo">
                 </div>
             </section>
-            <div class="wrapper-text-about-me">
-                <div class="text-about-me-container">
-                    <div class="text-about-me text-about-me-positioning">
-                        20 años
+            <div class="about-me-container">
+                <svg onclick="handleLeftClick()" id="about-me-arrow-left" class="about-me-arrows" width="44" height="44" fill="azure" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m13.789 7.155c.141-.108.3-.157.456-.157.389 0 .755.306.755.749v8.501c0 .445-.367.75-.755.75-.157 0-.316-.05-.457-.159-1.554-1.203-4.199-3.252-5.498-4.258-.184-.142-.29-.36-.29-.592 0-.23.107-.449.291-.591 1.299-1.002 3.945-3.044 5.498-4.243z"/></svg>
+                <div class="about-me-sections">
+                    <div class="about-me-section" data-index="0" data-status="active" id="about-me-section-main">
+                        <div class="text-about-me-container">
+                            <div class="text-about-me text-about-me-positioning">
+                                Estudiante de Ingeniería en Computación, UNAM
+                            </div>
+                            <div class="text-about-me text-about-me-positioning">
+                                Desarrollador web con enfoque Frontend
+                            </div>
+                            <div class="text-about-me text-about-me-positioning">
+                                <a class="link-curriculum" href="#">Consultar currículum</a>
+                            </div>
+                        </div>
+                        <div id="ciudad-de-mexico" class="text-about-me text-about-me-positioning">
+                            Ciudad de México, 2023
+                        </div>
                     </div>
-                    <div class="text-about-me text-about-me-positioning">
-                        Estudiante de Ingeniería en Computación, UNAM
+                    <div class="about-me-section" data-index="1" data-status="unknown">
+                        <div class="books-about-me-container">
+                            <div class="book-info">
+                                <img class="book-cover" src="imagenes/libros/Áyax.jpg" alt="Portada de Las aventuras de Tom Sawyer">
+                                <span class="book-title">Áyax</span>
+                                <span class="book-author">Sófocles</span>
+                            </div>
+                            <div class="book-info">
+                                <img class="book-cover" src="imagenes/libros/Las aventuras de Tom Sawyer.jpg" alt="Portada de Las aventuras de Tom Sawyer">
+                                <div class="book-data">
+                                    <span class="book-title">Las aventuras de Tom Sawyer</span>
+                                    <span class="book-author">Mark Twain</span>
+                                </div>
+                            </div>
+                            <div id="currently-reading-book-cover" class="book-info">
+                                <img class="book-cover" src="imagenes/libros/Laws of UX.jpg" alt="Portada de Las aventuras de Tom Sawyer">
+                                <div class="book-data">
+                                    <span class="book-title">Laws of UX</span>
+                                    <span class="book-author">Jon Yablonski</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="reading" class="text-about-me text-about-me-positioning">
+                            <span id="read">... leídos</span>
+                            <span id="currently-reading">actualmente leyendo</span>
+                        </div>
                     </div>
-                    <div class="text-about-me text-about-me-positioning">
-                        Desarrollador web con enfoque Frontend
-                    </div>
-                    <div class="text-about-me text-about-me-positioning">
-                        <a class="link-curriculum" href="#">Consultar currículum</a>
-                    </div>
+                    <div class="about-me-section" data-index="2" data-status="unknown">
+                        <div class="idioms-about-me-container">
+                            <div class="idioms-info">
+                                <img class="idiom-flag" src="imagenes/idiomas/mx.svg" alt="Bandera mexicana">
+                                <div class="idiom-data">
+                                    <span class="idiom-title">Español</span>
+                                    <span class="idiom-level">Nativo</span>
+                                </div>
+                            </div>
+                            <div class="book-info">
+                                <img class="idiom-flag" src="imagenes/idiomas/us.svg" alt="Portada de Las aventuras de Tom Sawyer">
+                                <div class="idiom-data">
+                                    <span class="idiom-title">Inglés</span>
+                                    <span class="idiom-level">Intermedio</span>
+                                </div>
+                            </div>
+                            <div id="currently-reading-book-cover" class="book-info">
+                                <img class="idiom-flag" src="imagenes/idiomas/it.svg" alt="Portada de Las aventuras de Tom Sawyer">
+                                <div class="idiom-data">
+                                    <span class="idiom-title">Italiano</span>
+                                    <span class="idiom-level">1 año</span>
+                                </div>
+                            </div>
+                            <div id="currently-reading-book-cover" class="book-info">
+                                <img class="idiom-flag" src="imagenes/idiomas/gr.svg" alt="Portada de Las aventuras de Tom Sawyer">
+                                <div class="idiom-data">
+                                    <span class="idiom-title">Griego</span>
+                                    <span class="idiom-level">desde septiembre de 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>               
                 </div>
-                <div id="ciudad-de-mexico" class="text-about-me text-about-me-positioning">
-                    Ciudad de México, 2023
+                <svg onclick="handleRightClick()" id="about-me-arrow-right" class="about-me-arrows" width="44" height="44" fill="azure" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591-1.299-1.002-3.945-3.044-5.498-4.243z"/></svg>
+            </div>
+            <div class="contact-container">
+                <div class="text-contact-container">
+                    <div class="text-contact">
+                        <h4><em>envíame un mensaje</em></h4>
+                        <span>diego.pibecs<strong>@</strong>gmail.com</span>
+                        <span><strong>@</strong>diego.pibecs</span>
+                        <span id="legal">2023 <strong>@</strong> Diego Alejandro Arroyo Moreno</span>
+                    </div>
                 </div>
             </div>
         </section>
     </header>
-    <section id="about-me-section">
-
-    </section>
     <section id="main-article" class="wavy">
         <div id="colored-article">
             <section id="section-wrapper">
@@ -213,7 +285,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Mount Eerie.jpg" alt="Mount Eerie album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Mount Eerie</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mpilNxIPdCzw7oTZWw16WvBU6leZzptFg" target="_blank">Mount Eerie</a></h1>
                             <h2 class="album-artist">the Microphones</h2>
                             <div class="album-description">
                                 <p>
@@ -258,7 +330,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Dawn.jpg" alt="Dawn album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Dawn</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_nm7uH7Oqlucp3pe8R0ri4nXFKMUkFH50c" target="_blank">Dawn</a></h1>
                             <h2 class="album-artist">Mount Eerie</h2>
                             <div class="album-description">
                                 <p>
@@ -303,7 +375,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Person Pitch.jpg" alt="Person Pitch album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Person Pitch</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_kam168bV_AW1TYoCw7fm1RELgLYG_1QCo" target="_blank">Person Pitch</a></h1>
                             <h2 class="album-artist">Panda Bear</h2>
                             <div class="album-description">
                                 <p>
@@ -348,7 +420,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Lift Your Skinny Fists Likes Antennas To Heaven.jpg" alt="Lift Your Skinny Fists Likes Antennas To Heaven album cover">
                         <div class="album-contents">
-                            <h1 class="album-title" style="font-size: 32pt;"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Lift Your Skinny Fists Like Antennas To Heaven</a></h1>
+                            <h1 class="album-title" style="font-size: 32pt;"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mZLN6LQOH-pyVdbP_PZoWS75eKSwskkCo" target="_blank">Lift Your Skinny Fists Like Antennas To Heaven</a></h1>
                             <h2 class="album-artist">Godspeed You! Black Emperor</h2>
                             <div class="album-description" style="max-height: calc(100% - 2rem - 1.5em - 32pt);">
                                 <p>
@@ -393,7 +465,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/De Todas las Flores.jpeg" alt="De Todas las Flores album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">De Todas las Flores</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_m4wNZ2nJPQ9ACIaRbcxcsMxZM6oC6MsSk" target="_blank">De Todas las Flores</a></h1>
                             <h2 class="album-artist">Natalia Lafourcade</h2>
                             <div class="album-description">
                                 <p>
@@ -438,7 +510,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Yankee Hotel Foxtrot.jpg" alt="Yankee Hotel Foxtrot album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Yankee Hotel Foxtrot</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_n0cVARYERuIXw8OsMFYLZB3G5SD9wJdG0" target="_blank">Yankee Hotel Foxtrot</a></h1>
                             <h2 class="album-artist">Wilco</h2>
                             <div class="album-description">
                                 <p>
@@ -475,15 +547,15 @@
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable"> <!-- Abbey Road -->
-                    <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Abbey Road.jpg" alt="Abbey Road album cover">
+                    <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Abbey Road.png" alt="Abbey Road album cover">
                     <div class="div-img-hidden">Abbey Road</div>
                     <div class="div-img-hidden-clickable">
                         <svg class="img-hidden-collapse" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
-                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Abbey Road.jpg" alt="Abbey Road album cover">
+                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Abbey Road.png" alt="Abbey Road album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Abbey Road</a></h1>
+                            <h1 class="album-title"><a href="https://open.spotify.com/album/0ETFjACtuP2ADo6LFhL6HN?si=yuJ-nZBxTVysw7j0HVyvCQ" target="_blank">Abbey Road</a></h1>
                             <h2 class="album-artist">the Beatles</h2>
                             <div class="album-description">
                                 <p>
@@ -528,7 +600,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Velocity.jpg" alt="Velocity: Design: Comfort. album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Velocity: Design: Comfort.</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mUjpq6hQ2Ub9rk238YqkO9FzCp6pHOQYg" target="_blank">Velocity: Design: Comfort.</a></h1>
                             <h2 class="album-artist">sweet trip</h2>
                             <div class="album-description">
                                 <p>
@@ -573,7 +645,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/In Rainbows.jpg" alt="In Rainbows album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">In Rainbows</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_lvqkQRb8iVo2obChPXi9XFRLoIyaxbTj8" target="_blank">In Rainbows</a></h1>
                             <h2 class="album-artist">Radiohead</h2>
                             <div class="album-description">
                                 <p>
@@ -618,7 +690,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Leaves Turn Inside You.jpg" alt="Leaves Turn Inside You album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Leaves Turn Inside You</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_liDS71z72X4Grx_xhrV0RaZsMfMMVJa7s" target="_blank">Leaves Turn Inside You</a></h1>
                             <h2 class="album-artist">Unwound</h2>
                             <div class="album-description">
                                 <p>
@@ -663,7 +735,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Revolver.jpg" alt="Revolver album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Revolver</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_n9q-ezB2RZF1WS7PR3h3drrTgNCf-DRSk" target="_blank">Revolver</a></h1>
                             <h2 class="album-artist">the Beatles</h2>
                             <div class="album-description">
                                 <p>
@@ -708,7 +780,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Mr. Morale & The Big Steppers.webp" alt="Mr. Morale & The Big Steppers album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Mr. Morale & The Big Steppers</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mdeH-JtTLsVGDionNbEvJGtQw--uolZy8" target="_blank">Mr. Morale & The Big Steppers</a></h1>
                             <h2 class="album-artist">Kendrick Lamar</h2>
                             <div class="album-description">
                                 <p>
@@ -753,7 +825,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Fetch The Bolt Cutters.webp" alt="Fetch The Bolt Cutters album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Fetch The Bolt Cutters</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_nvvTVXc476e1vHBGAN7Y-DH9_sZjOhgx8" target="_blank">Fetch The Bolt Cutters</a></h1>
                             <h2 class="album-artist">Fiona Apple</h2>
                             <div class="album-description">
                                 <p>
@@ -798,7 +870,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Illinois.jpg" alt="Illinois album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Illinois</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mvDMUbRUk-QGWlDE2O6SLwuKxyQr_3t44" target="_blank">Illinois</a></h1>
                             <h2 class="album-artist">Sufjan Stevens</h2>
                             <div class="album-description">
                                 <p>
@@ -843,7 +915,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Funeral.webp" alt="Funeral album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Funeral</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mUItEx7wND_P-iRSSgRiUo33fhJdFUL5E" target="_blank">Funeral</a></h1>
                             <h2 class="album-artist">Arcade Fire</h2>
                             <div class="album-description">
                                 <p>
@@ -888,7 +960,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Clear Moon.jpg" alt="Clear Moon album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Clear Moon</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_lYhcJDA4EFSfhl3UAWGN5urO06nmA35g0" target="_blank">Clear Moon</a></h1>
                             <h2 class="album-artist">Mount Eerie</h2>
                             <div class="album-description">
                                 <p>
@@ -933,7 +1005,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/In the Aeroplane Over the Sea.jpg" alt="In The Aeroplane Over The Sea album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">In The Aeroplane Over The Sea</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mcmpW2ioM2y1kninR5RNG2a_nCfz-AXfY" target="_blank">In The Aeroplane Over The Sea</a></h1>
                             <h2 class="album-artist">Neutral Milk Hotel</h2>
                             <div class="album-description">
                                 <p>
@@ -978,7 +1050,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/The Dark Side of the Moon.svg" alt="The Dark Side of the Moon album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">The Dark Side of the Moon</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_l1x-JAx0w53suECoCI0YJtW6VB8DBQWRQ" target="_blank">The Dark Side of the Moon</a></h1>
                             <h2 class="album-artist">Pink Floyd</h2>
                             <div class="album-description">
                                 <p>
@@ -1023,7 +1095,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/The Beatles.jpg" alt="The Beatles album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">The Beatles</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_njHTOnoK_aQOAa3XvnvmzZ76n8cBIJquI" target="_blank">The Beatles</a></h1>
                             <h2 class="album-artist">the Beatles</h2>
                             <div class="album-description">
                                 <p>
@@ -1068,7 +1140,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Fsharp Asharp infty.jpg" alt="F# A# ∞ album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">F# A# ∞</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_leNpfjYgnSp8bhkVTYkCFsuMB4cd3k3-M" target="_blank">F# A# ∞</a></h1>
                             <h2 class="album-artist">Godspeed You! Black Emperor</h2>
                             <div class="album-description">
                                 <p>
@@ -1113,7 +1185,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Ladies and gentlemen we are floating in space.jpg" alt="Ladies and gentlemen we are floating in space album cover">
                         <div class="album-contents">
-                            <h1 class="album-title" style="font-size: 32pt;"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Ladies and gentlemen we are floating in space</a></h1>
+                            <h1 class="album-title" style="font-size: 32pt;"><a href="https://www.youtube.com/playlist?list=OLAK5uy_lhRPPmTa364TBzTDGBVXO7BZsKvKaDd5o" target="_blank">Ladies and gentlemen we are floating in space</a></h1>
                             <h2 class="album-artist">Spiritualized</h2>
                             <div class="album-description" style="max-height: calc(100% - 2rem - 1.5em - 32pt);">
                                 <p>
@@ -1158,7 +1230,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Kid A.jpg" alt="Kid A album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Kid A</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_nZquM-iYg8ppQxrwe-KpcxH3FfcrL8smI" target="_blank">Kid A</a></h1>
                             <h2 class="album-artist">Radiohead</h2>
                             <div class="album-description">
                                 <p>
@@ -1195,15 +1267,15 @@
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable"> <!-- Películas -->
-                    <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Películas.jpeg" alt="Películas album cover">
+                    <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Películas.png" alt="Películas album cover">
                     <div class="div-img-hidden">Películas</div>
                     <div class="div-img-hidden-clickable">
                         <svg class="img-hidden-collapse" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
-                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Películas.jpeg" alt="Películas album cover">
+                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Películas.png" alt="Películas album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Películas</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_n7qxtmMTVnUklGn1K-l0McUzEM5gBF1jw" target="_blank">Películas</a></h1>
                             <h2 class="album-artist">La Maquina De Hacer Pájaros</h2>
                             <div class="album-description">
                                 <p>
@@ -1248,7 +1320,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Papa's Ear.jpg" alt="Papa's Ear album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Papa's Ear</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_nAEH3ldik3PLboW6I2QxW5KSEEb-H_h10" target="_blank">Papa's Ear</a></h1>
                             <h2 class="album-artist">Tenisscoats</h2>
                             <div class="album-description">
                                 <p>
@@ -1284,16 +1356,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-wrapper-section-hoverable"> <!-- Awaken, My Love! -->
+                <div class="main-wrapper-section-hoverable"> <!-- "Awaken, My Love!" -->
                     <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Awaken, My Love!.webp" alt="Awaken, My Love! album cover">
-                    <div class="div-img-hidden">Awaken, My Love!</div>
+                    <div class="div-img-hidden">"Awaken, My Love!"</div>
                     <div class="div-img-hidden-clickable">
                         <svg class="img-hidden-collapse" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Awaken, My Love!.webp" alt="Awaken, My Love! album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Awaken, My Love!</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_lbuUPQuPZcgV0-GZ-1CXsNPWZsTqzNPCM" target="_blank">"Awaken, My Love!"</a></h1>
                             <h2 class="album-artist">Childish Gambino</h2>
                             <div class="album-description">
                                 <p>
@@ -1338,7 +1410,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Feels.jpg" alt="Feels album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Feels</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_l0kdY7iF_0jpnYcOIA8YhB6L6Iky3k4OI" target="_blank">Feels</a></h1>
                             <h2 class="album-artist">Animal Collective</h2>
                             <div class="album-description">
                                 <p>
@@ -1383,7 +1455,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Discovery.jpg" alt="Discovery album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Discovery</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_lMA_iEf3aqk5YSDsnrPKojXegOiecSF94" target="_blank">Discovery</a></h1>
                             <h2 class="album-artist">Daft Punk</h2>
                             <div class="album-description">
                                 <p>
@@ -1428,7 +1500,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Vespertine.jpg" alt="Vespertine album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Vespertine</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_kBD_845bpnem9ZuvKPq8Ptoa47opzC1r4" target="_blank">Vespertine</a></h1>
                             <h2 class="album-artist">Björk</h2>
                             <div class="album-description">
                                 <p>
@@ -1473,7 +1545,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Atom Heart Mother.webp" alt="Atom Heart Mother album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Atom Heart Mother</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_m-_hJUy5TAO10yRvbxgvSO3ZrBp9_zXg4" target="_blank">Atom Heart Mother</a></h1>
                             <h2 class="album-artist">Pink Floyd</h2>
                             <div class="album-description">
                                 <p>
@@ -1518,7 +1590,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Song Islands.jpg" alt="Song Islands album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Song Islands</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_kiH07qf6ELd4tH3MLI5_mkjKwiby2XTC8" target="_blank">Song Islands</a></h1>
                             <h2 class="album-artist">the Microphones</h2>
                             <div class="album-description">
                                 <p>
@@ -1563,7 +1635,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/To Be Kind.jpg" alt="To Be Kind album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">To Be Kind</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_nqEDfB23AdNQTvOfzLxsPpjPqiT37aRo0" target="_blank">To Be Kind</a></h1>
                             <h2 class="album-artist">Swans</h2>
                             <div class="album-description">
                                 <p>
@@ -1608,7 +1680,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/loveless.webp" alt="loveless album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">loveless</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mdVxWs91qMNd9e-hT2bYOiLNBG7iAIv1g" target="_blank">loveless</a></h1>
                             <h2 class="album-artist">my bloody valentine</h2>
                             <div class="album-description">
                                 <p>
@@ -1653,7 +1725,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/the first glass beach album.jpg" alt="the first glass beach album album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">the first glass beach album</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_nWKZYVJcv6s476di0Z5jpwsOrtGFlowEI" target="_blank">the first glass beach album</a></h1>
                             <h2 class="album-artist">glass beach</h2>
                             <div class="album-description">
                                 <p>
@@ -1698,7 +1770,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Promises.jpg" alt="Promises album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Promises</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_m1EDXdgXNWy7O8O8kzJEK4pRCMybbqgIk" target="_blank">Promises</a></h1>
                             <h2 class="album-artist">Floating Points</h2>
                             <div class="album-description">
                                 <p>
@@ -1743,7 +1815,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/The Seer.jpg" alt="The Seer album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">The Seer</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mwzPGDQ5o6RDxBS_2CK0gMJ3uSO6sQYf8" target="_blank">The Seer</a></h1>
                             <h2 class="album-artist">Swans</h2>
                             <div class="album-description">
                                 <p>
@@ -1788,7 +1860,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Teens Of Denial.jpg" alt="Teens Of Denial album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Teens Of Denial</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mTviT3NTCOLxQ2Qu4L-QdPvcksyXcSXWI" target="_blank">Teens Of Denial</a></h1>
                             <h2 class="album-artist">Car Seat Headrest</h2>
                             <div class="album-description">
                                 <p>
@@ -1833,7 +1905,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Nonagon Infinity.jpg" alt="Nonagon Infinity album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Nonagon Infinity</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_mZl4XGD9wjmdnALDXLhiXbX1KufvfFZZY" target="_blank">Nonagon Infinity</a></h1>
                             <h2 class="album-artist">King Gizzard & The Lizard Wizard</h2>
                             <div class="album-description">
                                 <p>
@@ -1878,7 +1950,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/The Life Of Pablo.jpg" alt="The Life Of Pablo album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">The Life Of Pablo</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_keyJA-JsoAdfCylvyyIQMRjenzX6MzmnE" target="_blank">The Life Of Pablo</a></h1>
                             <h2 class="album-artist">Kanye West</h2>
                             <div class="album-description">
                                 <p>
@@ -1915,15 +1987,15 @@
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable"> <!-- Remain In Light -->
-                    <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Remain in Light.jpg" alt="Remain In Light album cover">
+                    <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Remain in Light.png" alt="Remain In Light album cover">
                     <div class="div-img-hidden">Remain In Light</div>
                     <div class="div-img-hidden-clickable">
                         <svg class="img-hidden-collapse" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
-                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Remain in Light.jpg" alt="Remain In Light album cover">
+                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Remain in Light.png" alt="Remain In Light album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Remain In Light</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_ldZpfPljmwhO4m7Eu8HUTylyh1uHT4wyY" target="_blank">Remain In Light</a></h1>
                             <h2 class="album-artist">Talking Heads</h2>
                             <div class="album-description">
                                 <p>
@@ -1968,7 +2040,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/A Moon Shaped Pool.jpg" alt="A Moon Shaped Pool album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">A Moon Shaped Pool</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_l1vVev88V56XX61im75q8VaXUjaImZ0nA" target="_blank">A Moon Shaped Pool</a></h1>
                             <h2 class="album-artist">Radiohead</h2>
                             <div class="album-description">
                                 <p>
@@ -2013,7 +2085,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/The Velvet Underground and Nico.jpg" alt="The Velvet Underground & Nico album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">The Velvet Underground & Nico</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_ngt5QCFCxWPcpApM_frvpcbOKJPtAKbpo" target="_blank">The Velvet Underground & Nico</a></h1>
                             <h2 class="album-artist">the Velvet Underground</h2>
                             <div class="album-description">
                                 <p>
@@ -2058,7 +2130,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Ants From Up There.jpg" alt="Ants From Up There album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Ants From Up There</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_lA-gMxOBo_UElG08bIl5oXE8Pcvu8k5sI" target="_blank">Ants From Up There</a></h1>
                             <h2 class="album-artist">Black Country, New Road</h2>
                             <div class="album-description">
                                 <p>
@@ -2095,15 +2167,15 @@
                     </div>
                 </div>
                 <div class="main-wrapper-section-hoverable"> <!-- Re -->
-                    <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Re.jpg" alt="Re album cover">
+                    <img class="main-section-wrapper-img img-clickable" draggable="false" src="imagenes/Re.png" alt="Re album cover">
                     <div class="div-img-hidden">Re</div>
                     <div class="div-img-hidden-clickable">
                         <svg class="img-hidden-collapse" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
                         </svg>
-                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Re.jpg" alt="Re album cover">
+                        <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Re.png" alt="Re album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Re</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_kDVgKGpfrRMdtbB6euouxtv7uiWidXkro" target="_blank">Re</a></h1>
                             <h2 class="album-artist">Café Tacvba</h2>
                             <div class="album-description">
                                 <p>
@@ -2148,7 +2220,7 @@
                         </svg>
                         <img class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/The Wall.svg" alt="The Wall album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">The Wall</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_nE3dmeYl_9Jgv2CT0aqufkDcyB6BBMcGM" target="_blank">The Wall</a></h1>
                             <h2 class="album-artist">Pink Floyd</h2>
                             <div class="album-description">
                                 <p>
@@ -2193,7 +2265,7 @@
                         </svg>
                         <img id="prueba" class="main-section-wrapper-img img-expandible" draggable="false" src="imagenes/Hi, How Are You.webp" alt="Hi, How Are You album cover">
                         <div class="album-contents">
-                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_k79Z1FevqgQ4s9oO9dfRo0jwP7M-26JiA" target="_blank">Hi, How Are You</a></h1>
+                            <h1 class="album-title"><a href="https://www.youtube.com/playlist?list=OLAK5uy_ly8JQHBrScjlEke2rjgWgrEZHpnKA3CQY" target="_blank">Hi, How Are You</a></h1>
                             <h2 class="album-artist">Daniel Johnston</h2>
                             <div class="album-description">
                                 <p>

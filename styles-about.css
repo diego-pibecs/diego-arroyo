@@ -25,7 +25,6 @@
         transform: translateY(-10px) translateX(0px);
         background-image: linear-gradient(90deg, var(--gray), azure);
     }
-    
 }
 
 @keyframes rotateAlbumLeft {
@@ -66,6 +65,121 @@
     }
 }
 
+.idiom-title {
+    margin-top: 0.5rem;
+    max-width: 16rem;
+    font-size: 15pt;
+}
+
+.idiom-level {
+    font-size: 11pt;
+    max-width: 16rem;
+    color: darkgray;
+}
+
+.idiom-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.idioms-about-me-container {
+    position: absolute;
+    top: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 40rem;
+}
+
+.idioms-info {
+    display: flex;
+    flex-direction: column;
+    color: azure;
+}
+
+.idiom-flag {
+    width: 16rem;
+    border-radius: 15px;
+}
+
+.currently-reading-box-shadow {
+    box-shadow: rgb(239, 239, 239) 0px 5px 1px -4px;
+}
+
+#currently-reading {
+    margin-right: 1.1rem;
+    cursor: pointer;
+}
+
+#read {
+    opacity: 0.5;
+    font-size: 14pt;
+}
+
+#reading {
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+    top: 50rem;
+}
+
+.books-about-me-container {
+    position: absolute;
+    top: 20rem;
+    display: flex;
+    justify-content: space-around;
+    width: 52rem;
+}
+
+.book-info {
+    transition: box-shadow 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    color: azure;
+}
+
+.book-cover {
+    width: 16rem;
+}
+
+.book-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.book-title {
+    margin-top: 0.5rem;
+    max-width: 16rem;
+    font-size: 15pt;
+}
+
+.book-author {
+    font-size: 11pt;
+    max-width: 16rem;
+    color: darkgray;
+}
+
+.about-me-arrows {
+    position: absolute;
+    top: calc(50%);
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#about-me-arrow-left {
+    left: 20em;
+}
+
+#about-me-arrow-right {
+    right: 20em;
+}
+
 .link-curriculum {
     color: azure;
     text-decoration: none;
@@ -75,29 +189,102 @@
     text-decoration: underline;
 }
 
-.wrapper-text-about-me {
+.about-me-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.wrapper-text-about-me .text-about-me-container {
+.about-me-container .text-about-me-container {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
+.about-me-section {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0rem;
+    transition: transform 400ms ease;
+}
+
+@keyframes hideSign {
+    0% {
+        transform: rotate(180deg) translateX(0) scale(1);
+    } 100% {
+        transform: rotate(180deg) translateX(0) scale(0);
+    }
+}
+
+@keyframes showSign {
+    0% {
+        transform: rotate(180deg) translateX(0) scale(0);
+    } 100% {
+        transform: rotate(180deg) translateX(0) scale(1);
+    }
+}
+
+.showSign {
+    animation: showSign 1s ease forwards;
+}
+
+.hideSign {
+    animation: hideSign 0.1s ease forwards;
+}
+
+.about-me-section[data-status="active"] {
+    transition-delay: 300ms;
+}
+
+.about-me-section[data-status="unknown"] {
+    transform: scale(0);
+}
+
+.about-me-section[data-status="becoming-active-from-before"] {
+    transform: translateX(-1300px) scale(0);
+    transition: none;
+}
+
+.about-me-section[data-status="becoming-active-from-after"] {
+    transform: translateX(1300px) scale(0);
+    transition: none;
+}
+
+.about-me-section[data-status="after"] {
+    transform: translateX(1300px) scale(0);
+}
+
+.about-me-section[data-status="before"] {
+    transform: translateX(-1300px) scale(0);
+}
+
 .show {
-    animation: show 2s ease-out forwards;
+    animation: show 1s ease-out forwards;
+}
+
+#idiomatico-title {
+    position: absolute;
+    top: 50rem;
 }
 
 #ciudad-de-mexico {
-    top: 60rem;
+    top: 50rem;
 }
 
 .text-about-me-positioning {
-    top: 20rem;
+    top: 24rem;
     position: absolute;
+}
+
+#about-me-section-main .text-about-me {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.about-me-section {
+    font-family: 'Eczar', serif;
+    line-height: 1.4rem;
 }
 
 .text-about-me {
@@ -105,21 +292,18 @@
     text-align: center;
     color: azure;
     font-size: 18pt;
-    font-family: 'Eczar', serif;
-    visibility: hidden;
-    opacity: 0;
 }
 
 .text-about-me:nth-of-type(2) {
-    top: 22.5rem;
+    top: 26.5rem;
 }
 
 .text-about-me:nth-of-type(3) {
-    top: 25rem;
+    top: 29rem;
 }
 
 .text-about-me:nth-of-type(4) {
-    top: 27.5rem;
+    top: 31.5rem;
 }
 
 #main-wrapper-section-img-mine .main-section-wrapper-img {
@@ -139,6 +323,7 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
+    visibility: hidden;
 }
 
 .t {
@@ -155,6 +340,7 @@
 
 .rotate180 #main-wrapper-section-img-mine {
     transform: rotate(180deg);
+    visibility: visible;
 }
 
 .unclickable {
@@ -176,7 +362,6 @@
 .change-title {
     animation: main-title-sign 1s ease-in-out forwards;
 }
-
 
 .disappear-bottom {
     animation: disappearBottom 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;

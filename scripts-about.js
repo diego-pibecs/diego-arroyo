@@ -2,8 +2,41 @@
 aboutMeBtn = document.getElementById("about-me-btn");
 aboutMeBtn.addEventListener("click", aboutMeTransition);
 
+currentlyReadingBookCover = document.getElementById("currently-reading-book-cover")
+currentlyReadingBtn = document.getElementById("currently-reading");
+currentlyReadingBtn.addEventListener("click", () => {
+    currentlyReadingBookCover.classList.add("currently-reading-box-shadow");
+    setTimeout(() => {
+        currentlyReadingBookCover.classList.remove("currently-reading-box-shadow");
+    }, 2000)
+})
+
 
 function aboutMeTransition() {
+    let navMenuIcon = document.getElementById("nav-menuicon");
+    navMenuIcon.style.fill = "azure";
+
+    const menuLinks = document.getElementsByClassName("nav-menu-link");
+    for (let index = 0; index < menuLinks.length; index++) {
+        const link = menuLinks[index];
+        link.style.color = "black";
+    }
+
+    const menuLinksHover = document.querySelectorAll(".nav-menu-item");
+    for (let index = 0; index < menuLinksHover.length; index++) {
+        const linkHover = menuLinksHover[index];
+        linkHover.style.backgroundColor = "white";
+        linkHover.addEventListener("mouseover", () => {
+            linkHover.style.backgroundColor = "#D1D1D1";
+        })
+        linkHover.addEventListener("mouseleave", () => {
+            linkHover.style.backgroundColor = "#FFFFFF";
+        })
+    }
+
+    aboutMeBtn.innerHTML = "inicio";
+    let controllerAboutMe = 1;
+
     document.getElementById("main-wrapper").scrollIntoView({behavior: "smooth"})
 
     mainArticle = document.getElementById("main-article");
@@ -18,7 +51,7 @@ function aboutMeTransition() {
     mainSubtitle = document.getElementById("main-title-sub");
     mainSubtitle.classList.add("hide");
 
-    bodyTag = document.getElementsByTagName("body");
+    const bodyTag = document.getElementsByTagName("body");
     for (let index = 0; index < bodyTag.length; index++) {
         const body = bodyTag[index];
         body.style.backgroundImage = "none";
@@ -46,9 +79,15 @@ function aboutMeTransition() {
                 mainWrapperSectionHoverable = document.getElementsByClassName("main-wrapper-section-hoverable");
                 for (let index = 0; index < mainWrapperSectionHoverable.length; index++) {
                     const hoverable = mainWrapperSectionHoverable[index];
-                    hoverable.style.visibility = "hidden";
-                    
+                    hoverable.style.visibility = "hidden";    
                 }
+
+                arrows = document.getElementsByClassName("about-me-arrows");
+                for (let index = 0; index < arrows.length; index++) {
+                    const arrow = arrows[index];
+                    arrow.style.opacity = "1";
+                }
+
                 textAboutMe = document.getElementsByClassName("text-about-me");
                 const texto1 = textAboutMe[0];
                 texto1.classList.add("show");
@@ -64,11 +103,6 @@ function aboutMeTransition() {
                         texto3.addEventListener("animationend", () => {
                             const texto4 = textAboutMe[3];
                             texto4.classList.add("show");
-
-                            texto4.addEventListener("animationend", () => {
-                                const texto5 = textAboutMe[4];
-                                texto5.classList.add("show");
-                            });
                         });
                     });
                 });
@@ -109,4 +143,60 @@ function aboutMeTransition() {
             }
         }
     }
+
+    if (controllerAboutMe == 1) {
+        aboutMeBtn.removeEventListener("click", aboutMeTransition);
+        aboutMeBtn.addEventListener("click", () => {
+            location.reload();
+        });
+    }
+}
+
+
+let activeIndex = 0;
+const sections = document.getElementsByClassName("about-me-section");
+const sign = document.getElementById("main-wrapper-section-img-mine");
+
+const handleRightClick = () => {
+    const nextIndex = activeIndex + 1 <= sections.length - 1 ? activeIndex + 1 : 0;
+    const currentSection = document.querySelector(`[data-index="${activeIndex}"]`);
+    const nextSection = document.querySelector(`[data-index="${nextIndex}"]`);
+
+    if (activeIndex == 2) {
+        sign.classList.remove('hideSign');
+        sign.classList.add('showSign')
+    } else if (activeIndex == 1 || activeIndex == 0) {
+        sign.classList.remove('showSign');
+        sign.classList.add('hideSign');
+    }
+
+    currentSection.dataset.status = "after";
+    nextSection.dataset.status = "becoming-active-from-before";
+    
+    setTimeout(() => {
+        nextSection.dataset.status = "active";
+        activeIndex = nextIndex;
+    })
+}
+
+const handleLeftClick = () => {
+    const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : sections.length - 1;
+    const currentSection = document.querySelector(`[data-index="${activeIndex}"]`);
+    const nextSection = document.querySelector(`[data-index="${nextIndex}"]`);
+
+    if (activeIndex == 0 || activeIndex == 2) {
+        sign.classList.remove('showSign');
+        sign.classList.add('hideSign');
+    } else if (activeIndex == 1) {
+        sign.classList.remove('hideSign');
+        sign.classList.add('showSign');
+    }
+
+    currentSection.dataset.status = "before";
+    nextSection.dataset.status = "becoming-active-from-after";
+
+    setTimeout(() => {
+        nextSection.dataset.status = "active";
+        activeIndex = nextIndex;
+    });
 }
