@@ -121,3 +121,8 @@ const hideRated = document.getElementsByClassName("album-rated");
 for (let i = 0; i < hideRated.length; i++) {
   hideRated[i].style.display = "none";
 }
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.getElementById("favicon").setAttribute("href", "iconos/favicon-darkmode.svg")
+}
+  

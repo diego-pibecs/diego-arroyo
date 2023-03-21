@@ -1,0 +1,137 @@
+@media screen and (max-width: 425px) {
+    body {
+        width: 100%;
+    }
+
+    #about-me-section-main .text-about-me {
+        display: none;
+    }
+
+    .about-me-arrows {
+        display: none;
+    }
+
+    #main-title-sign {
+        font-size: 38pt;
+    }
+
+    #main-title-sub {
+        font-size: 16pt;
+    }
+
+    .main-title {
+        margin-top: 6rem;
+    }
+
+    .main-nav {
+        transform: translateX(105px);
+    }
+
+    .img-expandible {
+        height: auto;
+        width: 99%;
+    }
+
+    .div-img-hidden-clickable {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .album-contents {
+        margin-top: 3rem;
+    }
+
+    .img-hidden-collapse {
+        top: 28.5rem;
+    }
+
+    .album-title {
+        font-size: 30pt;
+    }
+
+    .album-description {
+        overflow-y: visible;
+        padding-right: 0;
+    }
+
+    .album-description {
+        max-height: fit-content;
+        font-size: 14pt;
+    }
+
+    .album-contents {
+        height: auto;
+    }
+
+    #section-wrapper {
+        padding: 80px 0px;
+    }
+
+    #main-wrapper {
+        height: 850px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .img-expandible {
+        height: auto;
+        width: 99%;
+    }
+
+    #main-wrapper {
+        height: 800px;
+    }
+
+    .main-nav {
+        transform: translateX(75px);
+    }
+
+    .main-title {
+        margin-top: 2.5rem;
+    }
+
+    .main-wrapper-section-hoverable {
+        width: 170px;
+        height: auto;
+    }
+
+    .img-hidden-collapse {
+        top: 25.5rem;
+    }
+
+    #main-wrapper-section {
+        gap: 10px;
+    }
+
+    #section-wrapper {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .img-hidden-collapse {
+        top: 22rem;
+    }
+
+    #main-wrapper {
+        height: 1000px;
+    }
+
+    .main-title {
+        margin-top: 5rem;
+    }
+
+    .main-nav {
+        transform: translateX(50px);
+    }
+
+    #main-title-sign {
+        font-size: 32pt;
+    }
+
+    #main-title-sub {
+        font-size: 12pt;
+    }
+
+}
+
