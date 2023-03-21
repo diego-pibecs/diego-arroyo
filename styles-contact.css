@@ -3,7 +3,7 @@
         font-size: 64pt;
         color: black;
         transform: translateY(-10px) translateX(0px);
-        background-image: linear-gradient(90deg, var(--gray), rgb(0, 0, 0));
+        background-image: linear-gradient(90deg, white, black);
     }
 }
 
@@ -18,9 +18,15 @@
 @keyframes change-title-from-about {
     0% {
         color: azure;
+        font-size: 64pt;
+        transform: translateY(-10px) translateX(0px);
+        background-image: linear-gradient(90deg, var(--gray), azure);
     }
     100% {
         color: black;
+        font-size: 64pt;
+        transform: translateY(-10px) translateX(0px);
+        background-image: linear-gradient(90deg, white, black);
     }
 }
 
@@ -35,7 +41,7 @@
 }
 
 .show-contact {
-    animation: show-contact 1.5s ease forwards;
+    animation: show-contact 2s ease forwards;
 }
 
 .changing-from-about {

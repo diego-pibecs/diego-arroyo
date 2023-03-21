@@ -82,9 +82,6 @@ body {
 
 .nav-menu-item:hover {
     background-color: #7f7d66;
-}
-
-#about-me-btn:hover {
     cursor: pointer;
 }
 
